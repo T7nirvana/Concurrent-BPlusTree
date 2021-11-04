@@ -4,7 +4,7 @@ Team members: Yundi Bao, Yingqi Zhang
 
 ### Links
 
-* [https://t7nirvana.github.io/Concurrent-BPlusTree/(this page)](https://t7nirvana.github.io/Concurrent-BPlusTree/)
+* [https://t7nirvana.github.io/Concurrent-BPlusTree/](https://t7nirvana.github.io/Concurrent-BPlusTree/) (this page)
 * [Proposal](https://t7nirvana.github.io/Concurrent-BPlusTree/doc/proposal)
 * [Checkpoint](https://t7nirvana.github.io/Concurrent-BPlusTree/doc/checkpoint)
 * [Poster](https://t7nirvana.github.io/Concurrent-BPlusTree/Poster.pdf)
