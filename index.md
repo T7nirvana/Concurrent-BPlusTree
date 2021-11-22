@@ -5,10 +5,10 @@ Team members: Yundi Bao, Yingqi Zhang
 ### Links
 
 * [https://t7nirvana.github.io/Concurrent-BPlusTree/](https://t7nirvana.github.io/Concurrent-BPlusTree/) (this page)
-* [Proposal](https://t7nirvana.github.io/Concurrent-BPlusTree/doc/proposal)
-* [Checkpoint](https://t7nirvana.github.io/Concurrent-BPlusTree/doc/checkpoint)
-* [Poster](https://t7nirvana.github.io/Concurrent-BPlusTree/Poster.pdf)
-* [Final Report](https://t7nirvana.github.io/Concurrent-BPlusTree/Report.pdf)
+* [Proposal](https://t7nirvana.github.io/Concurrent-BPlusTree/doc/proposal.pdf)
+* [Milestone](https://t7nirvana.github.io/Concurrent-BPlusTree/doc/milestone.pdf)
+* [Poster(coming soon)](https://t7nirvana.github.io/Concurrent-BPlusTree/Poster.pdf)
+* [Final Report(coming soon)](https://t7nirvana.github.io/Concurrent-BPlusTree/Report.pdf)
 
 ### Summary
 
@@ -52,9 +52,9 @@ We will first implement our own B+Tree data structure since this is straightforw
 - The evaluation by running benchmarks and analyze the results
 
 #### Hope to Archive
-- Supporting Scan() in the two lock-based versions
-- Supporting Scan() in the lock-free version
-- Utilizing SIMD execution and hiding latencies in the lock-free version
+- ~~ Supporting Scan() in the two lock-based versions ~~
+- ~~ Supporting Scan() in the lock-free version ~~
+- ~~ Utilizing SIMD execution and hiding latencies in the lock-free version ~~
 
 We hope our lock-free version(without SIMD or latency hiding) can have linear speedup, though the factor may be smaller than 1 since we can hardly fully utilize workers in the tree structure. It should be at least significantly faster than the fine-grained lock-based implementation, especially when we have large trees and more dependent requests.
 
@@ -68,10 +68,13 @@ We will implement our concurrent B+Trees in C++. C++ has its own pthread library
 
 | Week           | Task                                                        | Progress    |
 |----------------|-------------------------------------------------------------|-------------|
-| 11/01 -- 11/07 | Proposal, Background Research                               | doing       |
-| 11/08 -- 11/14 | B+Tree, Lock-based Implementations                          |             |
-| 11/15 -- 11/21 | Lock-free Implementation                                    |             |
+| 11/01 -- 11/07 | Proposal, Background Research                               | done        |
+| 11/08 -- 11/14 | B+Tree, Lock-based Implementations                          | done        |
+| 11/15 -- 11/21 | Lock-free Implementation                                    | delayed     |
 |                |Milestone                                                    |             |
-| 11/22 -- 11/28 | Benchmark, Evaluation, and Extra Feature if possible        |             |
-| 11/29 -- 12/05 | Final Measurement and Report                                 |             |
-| 12/06 -- 12/10 | Poster                                                      |             |
+| 11/22 -- 11/25 | Yundi: Current B+Tree Implementation Refactor               |             |
+| 11/26 -- 11/28 | Yundi & Yingqi: Lock-free Implementation                    |             |
+| 11/29 -- 11/30 | Yingqi: Benchmark Environment                               |             |
+| 12/01 -- 12/04 | Yingqi: Benchmark, Evaluation                               |             |
+| 12/05 -- 12/08 | Yundi & Yingqi: Final Measurement and Report                |             |
+| 12/09 -- 12/10 | Yundi & Yingqi: Poster                                      |             |
